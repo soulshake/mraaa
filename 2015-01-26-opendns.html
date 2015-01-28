@@ -294,7 +294,7 @@ WIN $$$ (And performance, too, because of caching)
 
 # Modern copy-on-write on your desktop
 
-(In no specific order; non exhaustive list)
+(In no specific order; non-exhaustive list)
 
 - LVM (Logical Volume Manager) on Linux
 
@@ -310,13 +310,13 @@ WIN $$$ (And performance, too, because of caching)
 
 # Copy-on-write and Docker: a love story
 
-- Without copy-on-write:
+- Without copy-on-write...
 
   - it would take forever to start a container
 
   - containers would use up a lot of space
 
-- Without copy-on-write "on your desktop":
+- Without copy-on-write "on your desktop"...
 
   - Docker would not be usable on your Linux machine
 
@@ -384,7 +384,7 @@ class: center, middle
 
 - As it happens, we also .red[♥] Debian and Ubuntu very much
 
-- First version of Docker is targetted at Ubuntu (and Debian)
+- First version of Docker is targeted at Ubuntu (and Debian)
 
 ---
 
@@ -477,7 +477,7 @@ class: center, middle
 # When deleting a file...
 
 - A *whiteout* file is created
-  <br/>(if you know the concept of "tombstones", this is similar)
+  <br/>(similar to the concept of "tombstones")
 
 .small[
 ```
@@ -571,9 +571,9 @@ b39b81afc8ca
 - Protip: when we built dotCloud, we ended up putting
   all important data on *volumes*
 
-- When starting 1000x the same container, the data is loaded
-  only once from disk, and cached only once in memory
-  (but dentries will be duplicated)
+- When starting the same container 1000 times, the data 
+  is loaded only once from disk, and cached only once in 
+  memory (but dentries will be duplicated)
 
 ---
 
@@ -589,7 +589,7 @@ class: center, middle
 
   - RAID
 
-  - crypted devices
+  - encrypted devices
 
   - snapshots (i.e. copy-on-write)
 
